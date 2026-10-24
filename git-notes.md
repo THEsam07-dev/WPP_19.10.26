@@ -1,4 +1,5 @@
-﻿* ccd5f5e Add git-notes.md with history graph
+﻿* 5fdf515 * ccd5f5e Add git-notes.md with history graph
+* ccd5f5e Add git-notes.md with history graph
 *   bb2a5d0 Merge branch 'conflict-branch' and resolve conflict
 |\  
 | * 0baebed Update status for conflict branch v2
