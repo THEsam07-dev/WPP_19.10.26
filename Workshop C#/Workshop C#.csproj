@@ -43,8 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ConsoleHelper.cs" />
+    <Compile Include="Common\ITask.cs" />
+    <Compile Include="Menu\MenuRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\Level1\Task01_HelloWorld.cs" />
+    <Compile Include="Tasks\Level1\Task02_Primitives.cs" />
+    <Compile Include="Tasks\Level1\Task03_Calculator.cs" />
+    <Compile Include="Tasks\Level1\Task04_Parity.cs" />
+    <Compile Include="Tasks\Level1\Task05_MultiplicationTable.cs" />
+    <Compile Include="Tasks\Level1\Task06_SumOfDigits.cs" />
+    <Compile Include="Tasks\Level1\Task07_StringReverse.cs" />
+    <Compile Include="Tasks\Level1\Task08_FizzBuzz.cs" />
+    <Compile Include="Tasks\Level1\Task09_ArrayStats.cs" />
+    <Compile Include="Tasks\Level1\Task10_Sorting.cs" />
+    <Compile Include="Tasks\Level1\Task11_MatrixDiagonal.cs" />
+    <Compile Include="Tasks\Level1\Task12_Palindrome.cs" />
+    <Compile Include="Tasks\Level1\Task13_WordCounter.cs" />
+    <Compile Include="Tasks\Level1\Task14_AgeCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -54,6 +71,10 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tasks\Level2\" />
+    <Folder Include="Tasks\Level3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
