@@ -42,7 +42,7 @@ namespace Workshop_C_
                             launchControl = false;
                             break;
                         default:
-                            Console.WriteLine("Ошибка такой цыфры не предусмотренно. Пожалуйста, выберите число от 1 до 3.");
+                            Console.WriteLine("Ошибка такой цифры не предусмотренно. Пожалуйста, выберите число от 1 до 3.");
                             PressAnyToContinue();
                             break;
                     }
@@ -151,11 +151,6 @@ namespace Workshop_C_
                             PressAnyToContinue();
                             break;
 
-                        case 15:
-                            Task_GitWorkflow();
-                            PressAnyToContinue();
-                            break;
-
                         default:
                             Console.WriteLine("\nТакого задания нет. Попробуйте снова.");
                             PressAnyToContinue();
@@ -185,7 +180,6 @@ namespace Workshop_C_
             Console.WriteLine("12. Палиндром (без учёта регистра/пробелов)");
             Console.WriteLine("13. Счётчик вхождений слов в тексте (Dictionary)");
             Console.WriteLine("14. Возраст по дате рождения");
-            Console.WriteLine("15. Git: репозиторий → ветка → merge → разрешение конфликта");
             Console.WriteLine("0. Выход");
             Console.WriteLine("\nВыберите задание:");
         }
@@ -233,7 +227,7 @@ namespace Workshop_C_
         static void Task_Calculator()//номер 3
         {
             bool CALC = true;
-            
+
             while (CALC)
             {
 
@@ -246,8 +240,8 @@ namespace Workshop_C_
                 Console.WriteLine("4. Деление (/)");
                 Console.WriteLine("0. Выход");
 
-                string inputCalc = Console.ReadLine(); 
-                if(int.TryParse(inputCalc, out int Operation))
+                string inputCalc = Console.ReadLine();
+                if (int.TryParse(inputCalc, out int Operation))
                 {
                     switch (Operation)
                     {
@@ -409,7 +403,7 @@ namespace Workshop_C_
         }
         static void Task_MultiplicationTable()//номер 5
         {
-            Console.Clear ();
+            Console.Clear();
             Console.WriteLine("Задание 5. Таблица умножения 10*10");
             const int size = 10;
             int width = 4;
@@ -536,7 +530,7 @@ namespace Workshop_C_
             }
             string result = new string(mas);
 
-            Console.WriteLine($"Реверс: \"{result}\"");            
+            Console.WriteLine($"Реверс: \"{result}\"");
         }
         static void Task_FizzBuzz()//номер 8
         {
@@ -587,7 +581,7 @@ namespace Workshop_C_
             Console.WriteLine($"Среднее: {avg:F3}");//до 3х знаков после запятой
         }
         static int GetMin(int[] arr)
-        {            
+        {
             if (arr == null || arr.Length == 0)
             {
                 Console.WriteLine("Ошибка: массив пуст!");
@@ -596,7 +590,7 @@ namespace Workshop_C_
             int min = arr[0];
             for (int i = 1; i < arr.Length; i++)
             {
-                if (arr[i]< min)
+                if (arr[i] < min)
                 {
                     min = arr[i];
                 }
@@ -604,16 +598,16 @@ namespace Workshop_C_
             return min;
         }
         static int GetMax(int[] arr)
-        {            
+        {
             if (arr == null || arr.Length == 0)
             {
                 Console.WriteLine("Ошибка: массив пуст!");
                 return 0;
             }
             int max = arr[0];
-            for (int i = 1;i < arr.Length; i++)
+            for (int i = 1; i < arr.Length; i++)
             {
-                if (arr[i]> max)
+                if (arr[i] > max)
                 {
                     max = arr[i];
                 }
@@ -628,7 +622,7 @@ namespace Workshop_C_
                 return 0;
             }
             long sum = 0;
-            for (int i = 0;i < arr.Length;i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
@@ -717,7 +711,7 @@ namespace Workshop_C_
         static void InsertionSort(int[] arr)
         {
             int n = arr.Length;
-            for (int i = 1;  i < n ; i++)
+            for (int i = 1; i < n; i++)
             {
                 int key = arr[i];
                 int j = i - 1;
@@ -751,7 +745,7 @@ namespace Workshop_C_
                 }
             }
 
-            int[,] matrix = new int[n,n];
+            int[,] matrix = new int[n, n];
             var rnd = new Random();
             for (int i = 0; i < n; i++)
             {
@@ -820,19 +814,19 @@ namespace Workshop_C_
             int left = 0;
             int right = str.Length - 1;
 
-            while(left < right)
+            while (left < right)
             {
-                while(left < right && !char.IsLetterOrDigit(str[left]))
+                while (left < right && !char.IsLetterOrDigit(str[left]))
                 {
-                    left ++;
+                    left++;
                 }
                 if (char.ToLower(str[left]) != char.ToLower(str[right]))
                 {
                     return false;
                 }
 
-                left ++;
-                right --;
+                left++;
+                right--;
             }
             return true;
         }
@@ -932,10 +926,7 @@ namespace Workshop_C_
             int days = (today - startOfLastMonth).Days;
 
             Console.WriteLine($"\nВозраст: {years} лет, {months} месяцев, {days} дней.");
-        }
-        static void Task_GitWorkflow()//номер 15
-        {
-        }
+        }        
 
         //mid
         static void RunLevelMedium()
