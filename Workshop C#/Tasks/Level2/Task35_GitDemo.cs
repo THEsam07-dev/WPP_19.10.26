@@ -24,7 +24,7 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("что-то");
+            Console.WriteLine("ПРИВЕТ МИР!");
         }
     }
 }
