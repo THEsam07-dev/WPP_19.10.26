@@ -31,7 +31,6 @@ namespace Workshop_C_.Tasks.Level2
                 "WatchDogs", "Steep", "LANoir", "DragonsDogma", "KingdomComeDeliverance",
                 "FinalFantasyVIIRemake", "NeedForSpeedHeat", "Prey", "DeusExHumanRevolution",
                 "FalloutNewVegas", "HeavyRain", "Injastice", "Wolfenstein"
-
             };
 
             Console.WriteLine("=== Исходный список слов ===");
