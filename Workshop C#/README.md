@@ -20,3 +20,4 @@ Run `git log --graph --oneline --all` to inspect history.
 Clone the repo and open it in Visual Studio 2026.
 
 Status: resolved conflict
+Task 35 in progress
