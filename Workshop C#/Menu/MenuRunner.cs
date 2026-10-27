@@ -55,8 +55,7 @@ namespace Workshop_C_.Menu
                 new Task31_IDisposableAndUsing(),
                 new Task32_Temperature(),
                 new Task33_LINQStaff(),
-                new Task34_LINQByFirstLetter(),
-
+                new Task34_LINQByFirstLetter()
             };
             _level3Tasks = new List<ITask>
             {
