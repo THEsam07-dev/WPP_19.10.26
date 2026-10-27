@@ -23,5 +23,15 @@
 * 2e1a86c Add Features section
 * a2dae00 Initial commit: add README with base info
 # Git notes
+## Task 35 — Git: .gitignore, .editorconfig, PR, Conventional Commits, rebase
+
+### Что было сделано:
+1. Добавлены `.gitignore` и `.editorconfig` (коммит `chore: add gitignore and editorconfig`).
+2. Создана ветка `feature/task-35`, сделаны коммиты по Conventional Commits.
+3. Создан и смержен Pull Request (Squash merge) в ветку `main`.
+4. Создана ветка `feature/rebase-demo`, сделано 3 коммита.
+5. Выполнен интерактивный rebase: `git rebase -i HEAD~3`, три коммита объединены в один через `squash`.
+
+### Output (git log --oneline после rebase)
 ### What I learned
 я научился создавать ветки, сливать их через merge и вручную разрешать конфликты в редакторе Visual Studio 2026.
