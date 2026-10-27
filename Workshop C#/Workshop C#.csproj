@@ -81,6 +81,7 @@
     <Compile Include="Tasks\Level2\Task31_IDisposableAndUsing.cs" />
     <Compile Include="Tasks\Level2\Task32_Temperature.cs" />
     <Compile Include="Tasks\Level2\Task34_LINQByFirstLetter.cs" />
+    <Compile Include="Tasks\Level2\Task35_GitDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
