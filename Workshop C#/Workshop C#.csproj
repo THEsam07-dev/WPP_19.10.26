@@ -62,6 +62,25 @@
     <Compile Include="Tasks\Level1\Task12_Palindrome.cs" />
     <Compile Include="Tasks\Level1\Task13_WordCounter.cs" />
     <Compile Include="Tasks\Level1\Task14_AgeCalculator.cs" />
+    <Compile Include="Tasks\Level2\Task33_LINQStaff.cs" />
+    <Compile Include="Tasks\Level2\Task17_StringBuilderVsConcatenation.cs" />
+    <Compile Include="Tasks\Level2\Task16_SolutionMethod4String.cs" />
+    <Compile Include="Tasks\Level2\Task18_TryParseVsTryCatch.cs" />
+    <Compile Include="Tasks\Level2\Task19_StackOrQueue2Array.cs" />
+    <Compile Include="Tasks\Level2\Task20_Generalizations.cs" />
+    <Compile Include="Tasks\Level2\Task21_ENumWeekday.cs" />
+    <Compile Include="Tasks\Level2\Task22_MethodParamsAndOverload.cs" />
+    <Compile Include="Tasks\Level2\Task23_NullableTypes.cs" />
+    <Compile Include="Tasks\Level2\Task24_OOPAnimals.cs" />
+    <Compile Include="Tasks\Level2\Task25_IShapeInterfaceAndSorting.cs" />
+    <Compile Include="Tasks\Level2\Task26_StrategyPattern.cs" />
+    <Compile Include="Tasks\Level2\Task27_StudentIComparable.cs" />
+    <Compile Include="Tasks\Level2\Task28_EqualsOrGetHashCode4Point.cs" />
+    <Compile Include="Tasks\Level2\Task29_FactoryPattern.cs" />
+    <Compile Include="Tasks\Level2\Task30_BankAccountAndException.cs" />
+    <Compile Include="Tasks\Level2\Task31_IDisposableAndUsing.cs" />
+    <Compile Include="Tasks\Level2\Task32_Temperature.cs" />
+    <Compile Include="Tasks\Level2\Task34_LINQByFirstLetter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -73,7 +92,6 @@
     <Content Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tasks\Level2\" />
     <Folder Include="Tasks\Level3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
