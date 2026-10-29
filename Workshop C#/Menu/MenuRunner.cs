@@ -184,7 +184,7 @@ namespace Workshop_C_.Menu
 
                 if (int.TryParse(input3, out int taskNum3) && taskNum3 > 0 && taskNum3 <= _level3Tasks.Count)
                 {
-                    var task3 = _level2Tasks[taskNum3 - 1];
+                    var task3 = _level3Tasks[taskNum3 - 1];
 
                     ConsoleHelper.PrintTaskHeader(task3.Title, task3.Description, task3.Requirements);
 
