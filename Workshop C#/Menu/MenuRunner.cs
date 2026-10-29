@@ -67,6 +67,9 @@ namespace Workshop_C_.Menu
                 new Task40_AsyncOrAwaitNExceptionHandling(),
                 new Task41_TaskWhenAll10(),
                 new Task42_CancellationToken(),
+                new Task43_MultipleTypesOfExceptions(),
+                new Task44_TodoList(),
+                new Task45_Library()
 
             };
         }
