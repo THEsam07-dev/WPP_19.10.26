@@ -53,8 +53,7 @@ namespace Workshop_C_.Tasks.Level3
             Console.WriteLine($"Разница во времени: {plainT.TotalMilliseconds - memoT.TotalMilliseconds:F2} мс");
             Console.WriteLine($"Мемоизация быстрее в {speedup:F1} раз(а)");
             Console.WriteLine($"Результаты совпадают: {plainRes == memoRes}");
-        }
-        
+        }        
         private static long FibonacciPlain(int n)//рекурсия фибоначчи без кэша 
         {
             if (n <= 1) return n;
