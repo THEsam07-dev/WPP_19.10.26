@@ -61,6 +61,8 @@ namespace Workshop_C_.Menu
             _level3Tasks = new List<ITask>
             {
                 new Task36_DuplicatesList(),
+                new Task37_MemoizingFibonacci(),
+
 
             };
         }
