@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Workshop_C_.Common;
 using Workshop_C_.Tasks.Level1;
 using Workshop_C_.Tasks.Level2;
+using Workshop_C_.Tasks.Level3;
 
 namespace Workshop_C_.Menu
 {
@@ -59,7 +60,8 @@ namespace Workshop_C_.Menu
             };
             _level3Tasks = new List<ITask>
             {
-                //пока пусто
+                new Task36_DuplicatesList(),
+
             };
         }
 
@@ -81,7 +83,7 @@ namespace Workshop_C_.Menu
                 {
                     case "1": RunLevel1(); break;
                     case "2": RunLevel2(); break;
-                    case "3": Console.WriteLine("В разработке..."); ConsoleHelper.Pause(); break;
+                    case "3": RunLevel3(); break;
                     case "0": running = false; break;
                     default:
                         Console.WriteLine("Некорректный ввод.");
@@ -152,6 +154,41 @@ namespace Workshop_C_.Menu
                     ConsoleHelper.PrintTaskHeader(task2.Title, task2.Description, task2.Requirements);
 
                     task2.Run();
+
+                    ConsoleHelper.Pause();
+                }
+                else
+                {
+                    Console.WriteLine("Такого задания нет.");
+                    ConsoleHelper.Pause();
+                }
+            }
+        }
+        private void RunLevel3()
+        {
+            bool inLevel3 = true;
+            while (inLevel3)
+            {
+                Console.Clear();
+                Console.WriteLine("--- Уровень 3 — Продвинутый ---");
+
+                for (int i = 0; i < _level3Tasks.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {_level3Tasks[i].Title}");
+                }
+                Console.WriteLine("0. Назад");
+                Console.Write("\nВыберите задание: ");
+
+                string input3 = Console.ReadLine();
+                if (input3 == "0") { inLevel3 = false; continue; }
+
+                if (int.TryParse(input3, out int taskNum3) && taskNum3 > 0 && taskNum3 <= _level3Tasks.Count)
+                {
+                    var task3 = _level2Tasks[taskNum3 - 1];
+
+                    ConsoleHelper.PrintTaskHeader(task3.Title, task3.Description, task3.Requirements);
+
+                    task3.Run();
 
                     ConsoleHelper.Pause();
                 }

@@ -81,6 +81,7 @@
     <Compile Include="Tasks\Level2\Task31_IDisposableAndUsing.cs" />
     <Compile Include="Tasks\Level2\Task32_Temperature.cs" />
     <Compile Include="Tasks\Level2\Task34_LINQByFirstLetter.cs" />
+    <Compile Include="Tasks\Level3\Task36_DuplicatesList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
@@ -92,8 +93,6 @@
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tasks\Level3\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
