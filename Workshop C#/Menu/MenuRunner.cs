@@ -64,6 +64,8 @@ namespace Workshop_C_.Menu
                 new Task37_MemoizingFibonacci(),
                 new Task38_ListVsLinkedListBenchmark(),
                 new Task39_YieldReturn(),
+                new Task40_AsyncOrAwaitNExceptionHandling(),
+                new Task41_TaskWhenAll10(),
 
             };
         }

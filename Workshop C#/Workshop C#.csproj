@@ -85,6 +85,9 @@
     <Compile Include="Tasks\Level3\Task37_MemoizingFibonacci.cs" />
     <Compile Include="Tasks\Level3\Task38_ListVsLinkedListBenchmark.cs" />
     <Compile Include="Tasks\Level3\Task39_YieldReturn.cs" />
+    <Compile Include="Tasks\Level3\Task40_AsyncOrAwaitNExceptionHandling.cs" />
+    <Compile Include="Tasks\Level3\Task41_TaskWhenAll10.cs" />
+    <Compile Include="Tasks\Level3\Task42_CancellationToken.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
