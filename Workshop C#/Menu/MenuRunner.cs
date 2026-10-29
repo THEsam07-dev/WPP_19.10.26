@@ -66,6 +66,7 @@ namespace Workshop_C_.Menu
                 new Task39_YieldReturn(),
                 new Task40_AsyncOrAwaitNExceptionHandling(),
                 new Task41_TaskWhenAll10(),
+                new Task42_CancellationToken(),
 
             };
         }
