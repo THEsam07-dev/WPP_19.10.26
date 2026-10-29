@@ -23,5 +23,19 @@
 * 2e1a86c Add Features section
 * a2dae00 Initial commit: add README with base info
 # Git notes
+## Task 46 — Git stash / stash pop
+
+### Commands
+- git stash
+- git stash list
+- git checkout -b test-branch
+- git checkout main
+- git stash pop
+- git stash list
+
+### Output before (git stash list)
+```text
+stash@{0}: WIP on main: 76299a4 task part done
+
 ### What I learned
 я научился создавать ветки, сливать их через merge и вручную разрешать конфликты в редакторе Visual Studio 2026.

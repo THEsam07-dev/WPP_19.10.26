@@ -35,7 +35,7 @@ namespace Workshop_C_.Tasks.Level3
 
                 await Task.Delay(2000);
 
-                Console.WriteLine("\n>>> Время вышло! Вызываем cts.Cancel() <<<\n");
+                Console.WriteLine("\n>>> Время вышло! Вызываем cts.Cancel() <<<\n");// тест для stash
                 cts.Cancel();
 
                 try
