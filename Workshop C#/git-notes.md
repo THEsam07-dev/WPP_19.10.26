@@ -52,7 +52,7 @@ stash@{0}: WIP on main: 76299a4 task part done
 ### Output (git show v1.0.0)
 ```text
 tag v1.0.0
-Tagger: Igumno <igumno@example.com>
+Tagger: Igumnov <sigumnov2@outlook.com>
 Date:   Thu Oct 29 16:50:00 2026 +0300
 
 Release v1.0.0
@@ -62,3 +62,38 @@ Author: Igumnov <sigumnov2@outlook.com>
 Date:   Thu Oct 29 16:08:11 2026 +0300
 
     Complete Task 46 notes: git stash
+
+## Task 49 — Git reflog
+
+### Commands
+- git reflog
+- git reset --hard 3bb70f5
+
+### Output
+```text
+dc64f52 (HEAD -> main) HEAD@{0}: reset: moving to HEAD~1
+3bb70f5 HEAD@{1}: commit: Важный коммит, который нельзя терять
+dc64f52 (HEAD -> main) HEAD@{2}: commit: Add Task 48 notes: git tags
+
+## Task 50 — Git bisect
+
+### Commands
+- git bisect start
+- git bisect bad
+- git bisect good HEAD~9
+- git bisect bad / git bisect good
+- git bisect reset
+
+### Output
+```text
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[c2cb867d42b44866dd78e5b3e1d04d6ad4c564c] Commit 3 - OK
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[5cc5080aabb35c14b61b607084cc653804d020a] Commit 4 - BUG
+
+5cc5080aabb35c14b61b607084cc653804d020a is the first bad commit
+commit 5cc5080aabb35c14b61b607084cc653804d020a
+Author: Igumnov
+Date: ...
+
+    Commit 4 - BUG
