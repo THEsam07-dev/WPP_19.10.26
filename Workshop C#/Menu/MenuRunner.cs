@@ -63,7 +63,7 @@ namespace Workshop_C_.Menu
                 new Task36_DuplicatesList(),
                 new Task37_MemoizingFibonacci(),
                 new Task38_ListVsLinkedListBenchmark(),
-
+                new Task39_YieldReturn(),
 
             };
         }
