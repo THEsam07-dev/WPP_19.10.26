@@ -35,7 +35,7 @@ namespace Workshop_C_.Tasks.Level2
                 new Staff("Павел", 50, 100000m, "Test"),
                 new Staff("Ксения", 27, 55000m, "Test")
             };
-            Console.WriteLine("=== Топ-3 сотрудника по зарплате ===");
+            Console.WriteLine("Топ-3 сотрудника по зарплате");
             var top3Salaries = staff
                 .OrderByDescending(e => e.Salary)
                 .Take(3);
@@ -44,7 +44,7 @@ namespace Workshop_C_.Tasks.Level2
                 Console.WriteLine($"{emp.Name,-10} | Зарплата: {emp.Salary:C} | Отдел: {emp.Department}");
             }
             Console.WriteLine();
-            Console.WriteLine("=== Средняя зарплата по отделам ===");
+            Console.WriteLine("Средняя зарплата по отделам");
             var avgByDept = staff
                 .GroupBy(e => e.Department)
                 .Select(group => new
@@ -61,7 +61,7 @@ namespace Workshop_C_.Tasks.Level2
             }
             Console.WriteLine();
 
-            Console.WriteLine("=== Сотрудники старше 30 лет ===");
+            Console.WriteLine("Сотрудники старше 30 лет");
             var olderThan30 = staff
                 .Where(e => e.Age > 30)
                 .OrderBy(e => e.Age);

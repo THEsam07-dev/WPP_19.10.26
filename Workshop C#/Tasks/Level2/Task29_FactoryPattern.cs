@@ -21,13 +21,13 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("=== Демонстрация паттерна «Фабрика» ===\n");
+            Console.WriteLine("Демонстрация паттерна «Фабрика»\n");
 
             string message = "Скидка 20% на все товары! Успейте купить.";
 
             foreach (NotificationType type in Enum.GetValues(typeof(NotificationType)))
             {
-                Console.WriteLine($"--- Попытка отправить через {type} ---");
+                Console.WriteLine($"Попытка отправить через {type}");
 
                 try
                 {
@@ -42,7 +42,7 @@ namespace Workshop_C_.Tasks.Level2
 
                 Console.WriteLine();
             }
-            Console.WriteLine("--- Попытка передать неверный тип ---");
+            Console.WriteLine("Попытка передать неверный тип");
             try
             {
                 NotificationType invalidType = (NotificationType)99;

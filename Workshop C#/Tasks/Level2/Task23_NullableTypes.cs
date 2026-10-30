@@ -21,7 +21,7 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("=== работа с методом FindValue и оператором ?? ===");
+            Console.WriteLine("работа с методом FindValue и оператором ??");
 
             int? foundValue = FindValue("arena");
             int safeFoundValue = foundValue ?? -1;
@@ -31,7 +31,7 @@ namespace Workshop_C_.Tasks.Level2
             int safeNotFoundValue = notFoundValue ?? -1; // верн. -1, так как == null
             Console.WriteLine($"Ключ 'online': Значение = {safeNotFoundValue} (по умолчанию)");
 
-            Console.WriteLine("\n=== использование HasValue / Value ===");
+            Console.WriteLine("\nиспользование HasValue / Value");
             if (foundValue.HasValue)
             {
                 Console.WriteLine($"Проверка HasValue: Значение для 'arena' = {foundValue.Value}");
@@ -42,7 +42,7 @@ namespace Workshop_C_.Tasks.Level2
                 Console.WriteLine("Проверка HasValue: Значение для 'online' отсутствует (null).");
             }
 
-            Console.WriteLine("\n=== 3. Использование ?. (Null-conditional operator) ===");
+            Console.WriteLine("\n3.Использование ?. (Null-conditional operator)");
 
             // создаем пользователя без профиля
             User userWithoutProfile = new User { Name = "Иван", Profile = null };

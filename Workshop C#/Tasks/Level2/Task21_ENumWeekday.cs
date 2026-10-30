@@ -48,7 +48,7 @@ namespace Workshop_C_.Tasks.Level2
         }
         public void Run()
         {
-            Console.WriteLine("=== Тестирование enum дней недели ===\n");
+            Console.WriteLine("Тестирование enum дней недели\n");
 
             var allDays = (MyDayOfWeek[])Enum.GetValues(typeof(MyDayOfWeek));
 

@@ -22,22 +22,22 @@ namespace Workshop_C_.Tasks.Level2
         {
             var temp = new Temperature();
 
-            Console.WriteLine("=== 1. Корректное присваивание ===");
+            Console.WriteLine("1.Корректное присваивание");
             temp.Celsius = 25;
             Console.WriteLine($"Установлено: {temp.Celsius} °C");
             Console.WriteLine($"Пересчет в Фаренгейты: {temp.Fahrenheit:F2} °F\n");
 
-            Console.WriteLine("=== 2. Изменение значения и пересчет ===");
+            Console.WriteLine("2.Изменение значения и пересчет");
             temp.Celsius = 0;
             Console.WriteLine($"Установлено: {temp.Celsius} °C");
             Console.WriteLine($"Пересчет в Фаренгейты: {temp.Fahrenheit:F2} °F\n");
 
-            Console.WriteLine("=== 3. Граничное значение (Абсолютный ноль) ===");
+            Console.WriteLine("3.Граничное значение (Абсолютный 0)");
             temp.Celsius = -273.15;
             Console.WriteLine($"Установлено: {temp.Celsius} °C");
             Console.WriteLine($"Пересчет в Фаренгейты: {temp.Fahrenheit:F2} °F\n");
 
-            Console.WriteLine("=== 4. Некорректное присваивание (ниже абсолютного нуля) ===");
+            Console.WriteLine("4.Некорректное присваивание (ниже абсолютного 0)");
             try
             {
                 Console.WriteLine("Попытка установить -300 °C...");
@@ -61,9 +61,7 @@ namespace Workshop_C_.Tasks.Level2
                 {
                     if (value < -273.15)
                     {
-                        throw new ArgumentOutOfRangeException(
-                            nameof(value),
-                            "Температура не может быть ниже абсолютного нуля (-273.15 °C).");
+                        throw new ArgumentOutOfRangeException(nameof(value), "Температура не может быть ниже абсолютного нуля (-273.15 °C).");
                     }
                     _celsius = value;
                 }

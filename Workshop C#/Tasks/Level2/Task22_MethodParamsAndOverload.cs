@@ -20,7 +20,7 @@ namespace Workshop_C_.Tasks.Level2
         };        
         public void Run()
         {
-            Console.WriteLine("=== тестирование params и перегрузок ===\n");
+            Console.WriteLine("тестирование params и перегрузок\n");
 
             //params
             int result1 = Sum(1, 2, 3);

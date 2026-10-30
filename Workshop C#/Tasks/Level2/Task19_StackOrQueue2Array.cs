@@ -21,7 +21,7 @@ namespace Workshop_C_.Tasks.Level2
         public void Run()
         {
             //Тест стека
-            Console.WriteLine("=== тестирование MyStack<T> ===");
+            Console.WriteLine("тестирование MyStack<T>");
             var stack = new MyStack<int>(2);//2 - чтобы былло расширение
 
             Console.WriteLine($"Изначально пуст: {stack.IsEmpty}");//показ что пустой
@@ -56,7 +56,7 @@ namespace Workshop_C_.Tasks.Level2
             }
 
             //тест очереди 
-            Console.WriteLine("\n=== тестирование MyQueue<T> ===");
+            Console.WriteLine("\nтестирование MyQueue<T>");
             var queue = new MyQueue<string>(2);//так же 2
 
             Console.WriteLine($"Изначально пуста: {queue.IsEmpty}");

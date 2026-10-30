@@ -20,7 +20,7 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("=== 1. Проверка метода Equals ===");
+            Console.WriteLine("1.Проверка метода Equals");
             Point p1 = new Point(5, 10);
             Point p2 = new Point(5, 10);
             Point p3 = new Point(3, 7);
@@ -34,7 +34,7 @@ namespace Workshop_C_.Tasks.Level2
             Console.WriteLine($"p1.Equals((object)p2) : {p1.Equals((object)p2)}");
             Console.WriteLine($"p1.Equals(p3) (разные координаты) : {p1.Equals(p3)}\n");
 
-            Console.WriteLine("=== 2. Проверка работы в HashSet<Point> ===");
+            Console.WriteLine("2.Проверка работы в HashSet<Point>");
             HashSet<Point> points = new HashSet<Point>();
 
             points.Add(p1);

@@ -33,11 +33,11 @@ namespace Workshop_C_.Tasks.Level2
                 new Rectangle(11, 3),
                 new Triangle(5, 5, 5)
             };
-            Console.WriteLine("=== фигуры до сортировки ===");
+            Console.WriteLine("фигуры до сортировки");
             PrintShapes(shapes);
             shapes.Sort((s1, s2) => s1.Area().CompareTo(s2.Area()));
 
-            Console.WriteLine("\n=== фигуры после сортировки (по возрастанию площади) ===");
+            Console.WriteLine("\nфигуры после сортировки (по возрастанию площади)");
             PrintShapes(shapes);
         }
         private void PrintShapes(List<IShape> shapes)//всп. метод для отрисовки

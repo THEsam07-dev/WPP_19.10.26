@@ -20,7 +20,7 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("=== Демонстрация полиморфизма ===\n");
+            Console.WriteLine("Демонстрация полиморфизма\n");
 
             List<Animal> animals = new List<Animal>
             {

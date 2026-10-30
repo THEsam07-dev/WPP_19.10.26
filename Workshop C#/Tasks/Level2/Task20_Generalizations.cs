@@ -21,7 +21,7 @@ namespace Workshop_C_.Tasks.Level2
         public void Run()
         {
             //тест int
-            Console.WriteLine("=== тестирование на типе int ===");
+            Console.WriteLine("тестирование на типе int");
             int intA = 19;
             int intB = 32;
 
@@ -32,7 +32,7 @@ namespace Workshop_C_.Tasks.Level2
             Console.WriteLine($"Максимум из ({intA}, {intB}): {Max(intA, intB)}");
 
             //тест string
-            Console.WriteLine("=== тестирование на типе string ===");
+            Console.WriteLine("тестирование на типе string");
             string strA = "Dayz";//DayZ
             string strB = "Hellraiser";//Clive Barker's Hellraiser: Revival
 
@@ -43,7 +43,7 @@ namespace Workshop_C_.Tasks.Level2
             Console.WriteLine($"Максимум из ({strA}, {strB}): {Max(strA, strB)}");//по алфавиту
 
             //тест double
-            Console.WriteLine("=== тестирование на типе double ===");
+            Console.WriteLine("тестирование на типе double");
             double dubA = 6.29;
             double dubB = 4.26;
 

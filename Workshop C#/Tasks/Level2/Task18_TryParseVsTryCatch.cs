@@ -24,7 +24,7 @@ namespace Workshop_C_.Tasks.Level2
 
             foreach (var input in inputs)
             {
-                Console.WriteLine($"--- Ввод: \"{input}\" ---");
+                Console.WriteLine($"Ввод: \"{input}\"");
 
                 //способ 1
                 if (TryParseMethod(input, out int resultTryParse))

@@ -31,20 +31,20 @@ namespace Workshop_C_.Tasks.Level2
                 new Student("Максим", 4.3),
                 new Student("Захар", 3.3)
             };
-            Console.WriteLine("=== Исходный список студентов ===");
+            Console.WriteLine("Исходный список студентов");
             PrintList(students);
 
             //через IComparable
             students.Sort();
 
-            Console.WriteLine("\n=== Сортировка 1: По среднему баллу (по убыванию) ===");
+            Console.WriteLine("\nСортировка 1 - По среднему баллу (по убыванию)");
             Console.WriteLine("(Использован метод students.Sort() и IComparable)");
             PrintList(students);
 
             //через IComparer
             students.Sort(new ByNameComparer());
 
-            Console.WriteLine("\n=== Сортировка 2: По имени (в алфавитном порядке) ===");
+            Console.WriteLine("\nСортировка 2 - По имени (в алфавитном порядке)");
             Console.WriteLine("(Использован students.Sort(new ByNameComparer()) и IComparer)");
             PrintList(students);
         }

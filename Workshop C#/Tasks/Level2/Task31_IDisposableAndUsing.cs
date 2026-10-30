@@ -24,18 +24,18 @@ namespace Workshop_C_.Tasks.Level2
             string filePath = "test_output.txt";
             if (File.Exists(filePath)) File.Delete(filePath);
 
-            Console.WriteLine("=== Классический using блок ===");
+            Console.WriteLine("Классический using блок");
 
             using (var writer = new FileWriter(filePath))
             {
                 writer.Write("Привет!");
                 writer.Write("Это тестовая запись в файл.");
-                Console.WriteLine("Запись в файл выполнена внутри блока using...");
+                Console.WriteLine("Запись в файл выполнена внутри блока using.....");
             }//вызов writer.Dispose()
 
             Console.WriteLine("Вышли из блока using. Файл должен быть закрыт.\n");
 
-            Console.WriteLine("=== Проверка содержимого файла ===");
+            Console.WriteLine("Проверка содержимого файла");
             try
             {
                 string content = File.ReadAllText(filePath);
@@ -47,13 +47,13 @@ namespace Workshop_C_.Tasks.Level2
                 Console.WriteLine($"ОШИБКА: Файл заблокирован! {ex.Message}");
             }
 
-            Console.WriteLine("\n=== 2. Дополнительно: using-декларация (C# 8+) ===");
+            Console.WriteLine("\n2. Дополнительно: using-декларация (C# 8+)");
             /*
             using var writer2 = new FileWriter("test_output_2.txt");
             writer2.Write("Запись через using var.");
             Console.WriteLine("Запись через using var выполнена (файл закроется в конце метода).");
             */
-            Console.WriteLine("\n=== 3. Проверка использования после Dispose ===");
+            Console.WriteLine("\n3.Проверка использования после Dispose");
             var closedWriter = new FileWriter("temp.txt");
             closedWriter.Dispose();
 
@@ -77,8 +77,7 @@ namespace Workshop_C_.Tasks.Level2
             }
             public void Write(string text)
             {
-                if (_disposed)
-                    throw new ObjectDisposedException(nameof(FileWriter), "Невозможно писать в закрытый файл.");
+                if (_disposed) throw new ObjectDisposedException(nameof(FileWriter), "Невозможно писать в закрытый файл.");
 
                 _writer.WriteLine(text);
             }

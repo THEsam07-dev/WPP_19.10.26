@@ -21,7 +21,7 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("=== Демонстрация работы BankAccount ===\n");
+            Console.WriteLine("Демонстрация работы BankAccount\n");
 
             var account = new BankAccount();
             Console.WriteLine($"Начальный баланс: {account.Balance:C}");
@@ -33,7 +33,7 @@ namespace Workshop_C_.Tasks.Level2
             //успешние снятие
             try
             {
-                Console.WriteLine("Попытка снять 300...");
+                Console.WriteLine("Попытка снять 300.....");
                 account.Withdraw(300m);
                 Console.WriteLine($"Успешно! Текущий баланс: {account.Balance:C}\n");
             }
@@ -44,7 +44,7 @@ namespace Workshop_C_.Tasks.Level2
             //безуспешние снятие
             try
             {
-                Console.WriteLine("Попытка снять 1000 (больше, чем остаток)...");
+                Console.WriteLine("Попытка снять 1000 (больше, чем остаток).....");
                 account.Withdraw(1000m);
                 Console.WriteLine("Эта строка не должна выполниться.");
             }
@@ -62,7 +62,7 @@ namespace Workshop_C_.Tasks.Level2
             //ошибка пополнении отрицательной суммы
             try
             {
-                Console.WriteLine("\nПопытка пополнить на -50...");
+                Console.WriteLine("\nПопытка пополнить на -50.....");
                 account.Deposit(-50m);
             }
             catch (ArgumentException ex)

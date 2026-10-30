@@ -64,7 +64,7 @@ namespace Workshop_C_.Tasks.Level3
                 55//сандро мамукелашвили
             };
 
-            Console.WriteLine("=== Исходный список чисел ===");
+            Console.WriteLine("Исходный список чисел");
             Console.WriteLine(string.Join(", ", numbers));
             Console.WriteLine();
 

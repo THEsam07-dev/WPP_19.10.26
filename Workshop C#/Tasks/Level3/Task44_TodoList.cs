@@ -57,7 +57,7 @@ namespace Workshop_C_.Tasks.Level3
                             }
                             else
                             {
-                                Console.WriteLine("\n--- ВАШИ ЗАДАЧИ ---");
+                                Console.WriteLine("\nВАШИ ЗАДАЧИ");
                                 foreach (var task in tasks)
                                 {
                                     string status = task.IsDone ? "[x]" : "[ ]";

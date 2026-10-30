@@ -34,7 +34,7 @@ namespace Workshop_C_.Tasks.Level2
 
             };
 
-            Console.WriteLine("=== Исходный список слов ===");
+            Console.WriteLine("Исходный список слов");
             Console.WriteLine(string.Join(", ", words));
             Console.WriteLine();
 
@@ -47,7 +47,7 @@ namespace Workshop_C_.Tasks.Level2
                     SortedWords = group.OrderBy(w => w).ToList()
                 });
 
-            Console.WriteLine("=== Результат группировки ===");
+            Console.WriteLine("Результат группировки");
 
             foreach (var group in groupedWords)
             {

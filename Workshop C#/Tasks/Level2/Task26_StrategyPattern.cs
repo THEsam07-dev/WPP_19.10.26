@@ -21,7 +21,7 @@ namespace Workshop_C_.Tasks.Level2
         };
         public void Run()
         {
-            Console.WriteLine("=== Демонстрация паттерна «Стратегия» ===\n");
+            Console.WriteLine("Демонстрация паттерна «Стратегия»\n");
 
             decimal bPrice = 1000m;
             Console.WriteLine($"Базовая цена товара: {bPrice:C}\n");
@@ -38,7 +38,7 @@ namespace Workshop_C_.Tasks.Level2
             decimal pricePromo = calcPromo.Calc(bPrice);
             Console.WriteLine($"Промо-скидка:{pricePromo:C} (Скидка: 20%)");
 
-            Console.WriteLine("\n--- демонстрация смены стратегии на лету ---");
+            Console.WriteLine("\nдемонстрация смены стратегии на лету");
 
             var flexibleCalculator = new PriceCalc(new NoDiscount());
             Console.WriteLine($"Текущая цена:     {flexibleCalculator.Calc(bPrice):C}");
