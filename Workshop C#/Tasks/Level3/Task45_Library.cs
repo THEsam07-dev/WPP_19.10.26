@@ -93,19 +93,19 @@ namespace Workshop_C_.Tasks.Level3
 
             try
             {
-                Console.WriteLine("1.Александер берет 'Война миров'...");
+                Console.WriteLine("1.Александр берет 'Война миров'...");
                 library.BorrowBook(reader, book1);
                 Console.WriteLine("Успешно!");
 
-                Console.WriteLine("2.Александер берет 'Уснувший в Армагеддоне'...");
+                Console.WriteLine("2.Александр берет 'Уснувший в Армагеддоне'...");
                 library.BorrowBook(reader, book2);
                 Console.WriteLine("Успешно!");
 
-                Console.WriteLine("3.Александер берет 'Зов предков'...");
+                Console.WriteLine("3.Александр берет 'Зов предков'...");
                 library.BorrowBook(reader, book3);
                 Console.WriteLine("Успешно!");
 
-                Console.WriteLine("4.Александер пытается взять 4-ю книгу 'Электрические сны' (ожидаем ошибку лимита)...");
+                Console.WriteLine("4.Александр пытается взять 4-ю книгу 'Электрические сны' (ожидаем ошибку лимита)...");
                 library.BorrowBook(reader, book4);
             }
             catch (Exception ex)
@@ -115,11 +115,11 @@ namespace Workshop_C_.Tasks.Level3
 
             try
             {
-                Console.WriteLine("\n5.Александер возвращает 'Война миров'...");
+                Console.WriteLine("\n5.Александр возвращает 'Война миров'...");
                 library.ReturnBook(reader, book1);
                 Console.WriteLine("Успешно!");
 
-                Console.WriteLine("6.Александер берет 4-ю книгу 'Электрические сны' (теперь можно)...");
+                Console.WriteLine("6.Александр берет 4-ю книгу 'Электрические сны' (теперь можно)...");
                 library.BorrowBook(reader, book4);
                 Console.WriteLine("Успешно!");
             }
